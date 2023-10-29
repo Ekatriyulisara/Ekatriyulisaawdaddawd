@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ekatri Yulisara</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <a href="index.html"><img src="logo4.png"></a>
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">Profil</a></li>
+                    <li><a href="#galeri">Gallery</a></li>
+                    <li><a href="#aktifitas">Activities</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="content">
+            <h4>Hallo, My name is</h4>
+            <h1>Ekatri <span>Yulisara</span></h1>
+            <h3>I'm an information systems student</h3>
+        </div>
+    </div>
+    <!-------------About-------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="ara/about.jpg">
+                </div>
+                <div class="about-col-2 ">
+                    <h1 class="sub-title">My Profile</h1>
+                    <p>My name is Ekatri Yulisara, usually called Ara, I was born in the city of Dumai on July 13 2003, 
+                        I am the third of five siblings, I am a third semester student studying at the Sultan Syarif Kasim Riau State Islamic University, 
+                        Faculty of Science and Technology, Department of Information Systems.</p>
+
+                    
+                    <div class="Education">Education</div>
+                        <ul>
+                            <li><span>2009-2015</span><br>SDN 007 Purnama</li>
+                            <li><span>2015-2018</span><br>SMPN 7 Dumai</li>
+                            <li><span>2018-2021</span><br>SMKN 1 Dumai</li>
+                            <li><span>2022-Now</span><br>UIN Sultan Syarif Kasim Riau</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------------Gallery------------>
+
+    <div id="galeri">
+        <h1 class="judul"> G A L L E R Y </h1>
+        <div>
+            <a href="galeri/1.jpg"></a><img id="foto-gal" src="galeri/1.jpg" alt="">
+            <a href="galeri/2.jpg"></a><img id="foto-gal" src="galeri/2.jpg" alt="">
+            <a href="galeri/3.jpg"></a><img id="foto-gal" src="galeri/3.jpg" alt="">
+            <a href="galeri/4.jpg"></a><img id="foto-gal" src="galeri/4.jpg" alt="">
+            <a href="galeri/5.jpg"></a><img id="foto-gal" src="galeri/5.jpg" alt="">
+            <a href="galeri/6.jpg"></a><img id="foto-gal" src="galeri/6.jpg" alt="">
+            <a href="galeri/7.jpg"></a><img id="foto-gal" src="galeri/7.jpg" alt="">
+            <a href="galeri/8.jpg"></a><img id="foto-gal" src="galeri/8.jpg" alt="">
+            <a href="galeri/9.jpg"></a><img id="foto-gal" src="galeri/9.jpg" alt="">
+        </div>
+    </div>
+
+
+    <!--------------------- Aktivity ----------------->
+    <div id="aktifitas">
+        <div class="container">
+            <h1 class="sub-title">MY AKTIVITIES</h1>
+            <div class="list-aktifitas">
+                <link rel="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+                <div>
+                    <i class="https://fontawesome.com/v4/icon/university"></i>
+                    <h2>STUDYING</h2>
+                    <p> I study at a well-known university in Riau province called Sultan Syarif Kasim State Islamic University, Riau</p>
+                </div>
+
+                <div>
+                    <i class="https://fontawesome.com/v4/icon/sitemap"></i>
+                    <h2>Organization</h2>
+                    <p>I join organizations on campus because I want to expand my relationships</p>
+                </div>
+
+                <div>
+                    <i class="https://fontawesome.com/v4/icon/user-circle-o"></i>
+                    <h2>Study Club</h2>
+                    <P>I joined the ISNC study club on campus because I wanted to deepen my network knowledge</P>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--------------------- contact ----------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">HUBUNGI SAYA</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>ekatriyulisara13@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>085247814251</p>
+                </div>
+                <div class="contact-right">
+                    <div class="social-icons">
+                        <h1>SOCIAL MEDIA</h1>
+                        <a href="https://web.telegram.org/a/"><i class="fa-brands fa-facebook"></i>Ekatri Yulisara</a>
+                        <a href="https://instagram.com/ekatri.yulisara?igshid=YTQwZjQ0NmI0OA=="><i class="fa-brands fa-instagram"></i>ekatri.yulisara</a>
+                        <a href="https://wa.me/6285247814251"><i class="fa-brands fa-whatsapp"></i>+625247814251</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+</body>
+
+</html>
